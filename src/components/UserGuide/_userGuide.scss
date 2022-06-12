@@ -1,0 +1,119 @@
+.guide {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @include tablet {
+    flex-direction: row;
+    padding: 0 150px;
+  }
+  &__image {
+    max-width: 500px;
+    width: 100%;
+  }
+
+  &__content {
+    background-color: #6e54fd;
+    width: 70%;
+    border-radius: 5px;
+    padding: 25px 35px;
+    height: 220px;
+    color: #f6f6fb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 500px;
+    max-height: 200px;
+
+    h3 {
+      text-align: center;
+    }
+
+    p {
+      font-size: 0.95rem;
+      text-align: center;
+      margin-top: 30px;
+    }
+  }
+
+  .guide-btn {
+    margin-top: 20px;
+    width: 240px;
+    color: #6e54fd;
+    border: 2px solid #6e54fd;
+    font-weight: 600;
+    font-size: 0.9rem;
+    height: 40px;
+    border-radius: 20px;
+    background-color: white;
+    cursor: pointer;
+  }
+
+  .green {
+    background-color: #21c0af;
+    border: none;
+    color: #f6f6fb;
+  }
+}
+.main-container {
+  background-color: #6e54fd;
+  height: 100vh;
+  display: flex;
+  align-content: flex-start;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  .logo-container-guide {
+    margin: 0 auto;
+    font-weight: 700;
+    background-color: #fff;
+    width: 270px;
+    height: 270px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 120px;
+    .active {
+      font-size: 8rem;
+      color: #21c0af;
+      position: fixed;
+      margin-bottom: 60px;
+    }
+
+    .logo-title {
+      margin-bottom: -90px;
+      font-size: 1.9rem;
+      color: #252525;
+      margin-top: 15px;
+    }
+  }
+  .main-title {
+    color: white;
+    margin-top: 50px;
+  }
+  .button-container {
+    margin-top: 10px;
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+
+    .main-button {
+      margin-top: 20px;
+      width: 170px;
+      color: #6e54fd;
+
+      border: 2px solid #6e54fd;
+      font-weight: 700;
+      font-size: 1rem;
+      height: 40px;
+      border-radius: 20px;
+    }
+  }
+}

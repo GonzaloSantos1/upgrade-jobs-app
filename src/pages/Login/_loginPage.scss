@@ -1,0 +1,122 @@
+.login-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 0.95rem;
+
+  .choose-type-btn {
+    border: none;
+    background-color: white;
+    color: #6e54fd;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+  }
+
+  .img-container {
+    width: 100%;
+    text-align: center;
+    max-width: 500px;
+
+    &-user {
+      width: 100%;
+    }
+
+    &-company {
+      width: 85%;
+    }
+  }
+
+  .button-type-container {
+    text-align: center;
+    padding: 0 35px;
+  }
+}
+
+.desktop {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 500px;
+}
+
+.login-form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 25px 0;
+  text-align: center;
+  width: 90%;
+  gap: 0.5rem;
+  max-width: 500px;
+
+  label {
+    align-self: flex-start;
+    margin: 0 0 -9px 5%;
+    color: #3b3b3b;
+    font-size: 0.9rem;
+  }
+
+  ::placeholder {
+    text-align: left;
+    text-indent: 5px;
+    word-spacing: 10px;
+  }
+  input {
+    width: 90%;
+    text-align: center;
+    height: 40px;
+    margin: 2px 0;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+
+    &:focus {
+      outline: 1.5px solid #21c0af;
+      border: 1px solid rgba(0, 0, 0, 0);
+    }
+  }
+  button {
+    margin-top: 10px;
+    width: 90%;
+    background-color: #6e54fd;
+    color: white;
+    border: none;
+    height: 40px;
+    cursor: pointer;
+  }
+}
+
+.register-div {
+  text-align: center;
+  button {
+    border: none;
+    background-color: white;
+    color: #6e54fd;
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+}
+
+input[type='file'] {
+  &::file-selector-button {
+    height: 100%;
+    border: none;
+    color: #fff;
+    font-size: 0.9rem;
+    padding: 0.2em 0.4em;
+    border-radius: 0.2em;
+    background-color: #6e54fd;
+    transition: 2s;
+    width: 100%;
+  }
+}
+
+@include tablet {
+  .login-container {
+    flex-direction: row;
+  }
+}

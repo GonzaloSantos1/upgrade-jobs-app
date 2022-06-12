@@ -1,0 +1,31 @@
+.profile-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+
+  .profile-logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    margin: 30px 0 -20px 0;
+    border-radius: 50%;
+    border: 4px solid #21c0af;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .change-image {
+    border: none;
+    background-color: white;
+    color: #6e54fd;
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+}

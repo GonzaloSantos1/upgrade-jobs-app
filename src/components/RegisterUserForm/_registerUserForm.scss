@@ -1,0 +1,43 @@
+.register-form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 25px 0;
+  text-align: center;
+  gap: 0.5rem;
+  width: 90%;
+
+  ::placeholder {
+    text-align: left;
+    text-indent: 5px;
+  }
+  input {
+    width: 90%;
+    text-align: center;
+    height: 40px;
+    margin: 2px 0;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+
+    &:focus {
+      outline: 1.5px solid #21c0af;
+      border: 1px solid rgba(0, 0, 0, 0);
+    }
+  }
+  button {
+    margin-top: 10px;
+    width: 90%;
+    background-color: #6e54fd;
+    color: white;
+    border: none;
+    height: 40px;
+  }
+
+  .back-button {
+    border: none;
+    background-color: white;
+    color: #6e54fd;
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+}

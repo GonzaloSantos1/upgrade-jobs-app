@@ -1,0 +1,24 @@
+.register-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+
+  h4 {
+    text-align: center;
+    color: #6e54fd;
+    padding: 0 50px;
+    margin-bottom: 5px;
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+
+  .register-page-img-container {
+    width: 90%;
+    max-width: 500px;
+    .register-page-img {
+      width: 100%;
+    }
+  }
+}

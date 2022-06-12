@@ -1,0 +1,15 @@
+.empty {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+
+  .empty-image {
+    width: 100%;
+
+    img {
+      width: 100%;
+    }
+  }
+}

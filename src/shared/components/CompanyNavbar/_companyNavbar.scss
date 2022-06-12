@@ -1,0 +1,58 @@
+.company-navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 15px 0;
+  background-color: #6e54fd;
+  height: 30px;
+  position: sticky;
+  top: 0px;
+  width: 100%;
+
+  @include tablet {
+    justify-content: center;
+    gap: 200px;
+  }
+
+  .nav-item {
+    color: white;
+    cursor: pointer;
+    margin-top: 3px;
+  }
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  background-color: #6e54fd;
+  cursor: pointer;
+}
+
+.dropdown-submenu {
+  background-color: #6e54fd;
+  position: absolute;
+  list-style: none;
+  display: none;
+  width: 100%;
+}
+.dropdown-submenu.show {
+  text-decoration: none;
+  display: block;
+}
+.drop-down-lu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.drop-down-li {
+  padding: 8px 12px;
+}
+
+li:hover {
+  background-color: rgba(0, 0, 0, 0.14);
+  cursor: pointer;
+}

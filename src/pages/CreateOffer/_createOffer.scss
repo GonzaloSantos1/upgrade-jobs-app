@@ -1,0 +1,67 @@
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+
+h4 {
+  text-align: center;
+  color: #6e54fd;
+}
+
+.create-offer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 25px 0;
+  width: 90%;
+
+  @include tablet {
+    max-width: 500px;
+  }
+
+  ::placeholder {
+    text-align: center;
+  }
+
+  &-input {
+    width: 90%;
+    text-align: center;
+    height: 30px;
+    margin: 2px 0;
+  }
+
+  button {
+    margin-top: 10px;
+    width: 90%;
+    background-color: #6e54fd;
+    color: white;
+    border: none;
+    height: 30px;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .back-button {
+    border: none;
+    background-color: white;
+    color: #6e54fd;
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+
+  .description {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    text-align: center;
+    height: 300px;
+    margin: 2px 0;
+    resize: none;
+  }
+}

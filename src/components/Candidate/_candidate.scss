@@ -1,0 +1,77 @@
+.candidate-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 30px;
+  gap: 20px;
+  align-items: center;
+
+  .candidate-img {
+    width: 200px;
+    max-height: 350px;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+    }
+  }
+  .candidate-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #3b3b3b;
+    gap: 10px;
+    width: 100%;
+    padding: 10px;
+
+    h2 {
+      font-weight: 500;
+    }
+
+    .see-cv {
+      text-align: center;
+      color: #6e54fd;
+      font-size: 1.1rem;
+      font-weight: 600;
+    }
+  }
+  .candidate-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+
+    .candidate-button {
+      width: 90%;
+      margin: 0 10px;
+      height: 45px;
+      border: none;
+      background-color: #6e54fd;
+      color: #222222;
+      font-size: 0.95rem;
+      font-weight: 500;
+    }
+    .green {
+      background-color: #1dd39c;
+    }
+
+    .red {
+      background-color: rgb(252, 62, 62);
+    }
+
+    .orange {
+      background-color: rgb(252, 187, 68);
+      line-height: 1.2;
+    }
+  }
+}
+
+.candidate-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}

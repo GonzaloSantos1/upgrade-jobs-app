@@ -1,0 +1,30 @@
+.company-offers-page {
+  text-align: center;
+  min-height: 100vh;
+  background-color: #f6f3f3be;
+  padding-bottom: 30px;
+
+  .new-offer {
+    margin: 20px 0;
+    width: 80%;
+    background-color: #6e54fd;
+    color: white;
+    border: none;
+    height: 40px;
+    font-size: 1.1rem;
+
+    @include tablet {
+      width: 620px;
+    }
+  }
+
+  .company-offers-list {
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+}
